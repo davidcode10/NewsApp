@@ -13,6 +13,8 @@
 		DED5A040281030E800D263D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED5A03E281030E800D263D6 /* Main.storyboard */; };
 		DED5A042281030E800D263D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED5A041281030E800D263D6 /* Assets.xcassets */; };
 		DED5A045281030E800D263D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED5A043281030E800D263D6 /* LaunchScreen.storyboard */; };
+		DEFC8D052810420C0028C7EB /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8D042810420C0028C7EB /* APICaller.swift */; };
+		DEFC8D0728104C6F0028C7EB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8D0628104C6F0028C7EB /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DED5A041281030E800D263D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED5A044281030E800D263D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED5A046281030E800D263D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFC8D042810420C0028C7EB /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		DEFC8D0628104C6F0028C7EB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DED5A041281030E800D263D6 /* Assets.xcassets */,
 				DED5A043281030E800D263D6 /* LaunchScreen.storyboard */,
 				DED5A046281030E800D263D6 /* Info.plist */,
+				DEFC8D042810420C0028C7EB /* APICaller.swift */,
+				DEFC8D0628104C6F0028C7EB /* NewsTableViewCell.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				DED5A03D281030E800D263D6 /* ViewController.swift in Sources */,
 				DED5A039281030E800D263D6 /* AppDelegate.swift in Sources */,
+				DEFC8D0728104C6F0028C7EB /* NewsTableViewCell.swift in Sources */,
 				DED5A03B281030E800D263D6 /* SceneDelegate.swift in Sources */,
+				DEFC8D052810420C0028C7EB /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
