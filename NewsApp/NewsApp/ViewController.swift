@@ -37,6 +37,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         fetchTopStories()
         createSearchBar()
+        
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(didPullToRefresh),
+                                            for: .valueChanged)
+    }
+    
+    @objc private func didPullToRefresh() {
+        // Re-fetch data
+        fetchTopStories()
     }
     
     override func viewDidLayoutSubviews() {
@@ -50,6 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     private func fetchTopStories() {
+        articles.removeAll()
         APICaller.shared.getTopStories { [weak self] result in
         switch result {
         case .success(let articles):
@@ -63,6 +73,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             })
             
             DispatchQueue.main.async {
+                self?.tableView.refreshControl?.endRefreshing()
                 self?.tableView.reloadData()
             }
         case .failure(let error):
